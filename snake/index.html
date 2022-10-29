@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNAKE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header_name">Snake 2D by V.Shushukov</p>
+    </header>
+    <div class="buttons">
+      <p class="button_text p_text">Options</p>
+      <div class="buttons_level">
+        <p class="button_text">speed</p>
+        <button class="slow_btn behind"><img src="down.svg" alt="" /></button>
+
+        <button class="fast_btn behind"><img src="up.svg" alt="" /></button>
+        <div class="speed_ok behind1">0</div>
+      </div>
+      <div class="buttons_map">
+        <p class="button_text">color</p>
+
+        <button class="black_btn behind"></button>
+        <button class="yellow_btn behind"></button>
+        <button class="white_btn behind"></button>
+      </div>
+      <img class="go_btn" src="icon_go.svg" alt="" />
+    </div>
+    <div class="score_area">
+      <p class="button_text">Score</p>
+      <div class="score behind1">0</div>
+    </div>
+
+    <div class="snake">
+      <p class="button_text">Live</p>
+      <img class="snake1" src="snake.png" alt="" />
+      <img class="snake2" src="snake.png" alt="" />
+    </div>
+    <div class="table">
+      <canvas class="land" width="400" height="400" id="game"></canvas>
+    </div>
+    <div class="best_score"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
